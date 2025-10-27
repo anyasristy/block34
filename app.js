@@ -2,7 +2,7 @@ import express from "express";
 import employees from "#db/employees";
 const app = express();
 app.get("/", (req, res) => {
-  res.send("Hello employees.");
+  res.send("Hello employees!");
 });
 app.get("/employees/random", (req, res) => {
   const randomIndex = Math.floor(Math.random() * employees.length);
